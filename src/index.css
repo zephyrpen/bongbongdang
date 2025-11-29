@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+@theme {
+  --color-bong-bg: #F5F0E8;
+  --color-bong-brown: #5D4E37;
+  --color-bong-red: #A65D57;
+  --color-bong-gold: #D4A853;
+  
+  --font-serif: 'Nanum Myeongjo', serif;
+  --font-sans: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: var(--color-bong-bg);
+  color: var(--color-bong-brown);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F0E8; 
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A853; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A65D57; 
+}
